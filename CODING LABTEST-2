@@ -49,8 +49,8 @@ public class labtest1_2 {
 		System.out.println(" Enter hours worked : RM " + hours);
 		
 		System.out.println("");
-		System.out.println(" Commission         : RM " + commission);
-		System.out.println(" Daily wages        : RM " + wages);
+		System.out.printf(" Commission           : RM %.2f" + commission);
+		System.out.printf("\n Daily wages        : RM %.2f" + wages);
 	}
 
 }
