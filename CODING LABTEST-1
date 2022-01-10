@@ -62,7 +62,7 @@ public class LABTEST1 {
     	discount3= totalprice-discount2;
     	System.out.println();
 
-    	System.out.println("Total price           : RM " + totalprice);
+    	System.out.printf("\nTotal price           : RM %.2f " , totalprice);
       
 	
     	if (totalprice>=100) {
@@ -103,7 +103,7 @@ public class LABTEST1 {
         	discount3= totalprice-discount2;
         	System.out.println();
 
-        	System.out.println("Total price           : RM " + totalprice);
+        	System.out.printf("\nTotal price           : RM %.2f " , totalprice);
 
         	if (totalprice>=100) {
         		
@@ -133,7 +133,7 @@ public class LABTEST1 {
             	discount3= totalprice-discount2;
             	System.out.println();
 
-            	System.out.println("Total price           : RM " + totalprice);
+            	System.out.printf("\nTotal price           : RM %.2f " , totalprice);
 
         	
             	if (totalprice>=100) {
