@@ -1,0 +1,163 @@
+import java.util.Scanner;
+public class LABTEST1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner in = new Scanner (System.in);
+		
+		
+		int items;
+    	double price1;
+    	int qtty1;
+    	double price2;
+    	int qtty2;
+    	double price3;
+    	int qtty3;
+    	
+    	
+    	double discount;
+    	double discount1;
+    	double totalprice;
+    	double discount2;
+    	double discount3;
+
+    	
+        
+        
+        System.out.print("Enter the number of items: ");
+    	items = in.nextInt();
+    	System.out.println("");
+    	
+    	if (items==3) {
+    		
+    	System.out.print("Enter price of the first item: RM ");
+    	price1= in.nextDouble();
+    	System.out.print("Enter quantity of first item: ");
+    	qtty1 = in.nextInt();
+    	
+    	
+    	System.out.println();
+    
+    	
+    	System.out.print("Enter price of the second item: RM ");
+    	price2= in.nextDouble();
+    	System.out.print("Enter quantity of second item: ");
+    	qtty2 = in.nextInt();
+    	
+    	System.out.println("");
+    
+    	System.out.print("Enter price of the third item: RM ");
+    	price3= in.nextDouble();
+    	System.out.print("Enter quantity of third item: ");
+    	qtty3 = in.nextInt();
+    	
+    		
+    	
+    	totalprice = (price1*qtty1)+(price2*qtty2)+(price3*qtty3);
+ 
+    	discount =  (0.2)*totalprice;
+    	discount1= totalprice -discount;
+    	discount2=  (0.9)*totalprice;
+    	discount3= totalprice-discount2;
+    	System.out.println();
+
+    	System.out.println("Total price           : RM " + totalprice);
+      
+	
+    	if (totalprice>=100) {
+    		
+    		System.out.printf("Discount received  : RM %.2f " , discount);
+    	    System.out.printf("\nPrice to be paid : RM %.2f " , discount1);
+    	}
+    	else {
+    		System.out.printf("Discount received  : RM %.2f " , discount2);
+    	    System.out.printf("\nPrice to be paid : RM %.2f " , discount3);
+    	    
+    	}}
+ 
+    	else if (items==2) {
+    		
+    		System.out.print("Enter price of the first item: RM ");
+        	price1= in.nextDouble();
+        	System.out.print("Enter quantity of first item: ");
+        	qtty1 = in.nextInt();
+        	
+        	
+        	System.out.println("");
+        
+        	
+        	System.out.print("Enter price of the second item: RM ");
+        	price2= in.nextDouble();
+        	System.out.print("Enter quantity of second item: ");
+        	qtty2 = in.nextInt();
+        	
+        	System.out.println("");
+    
+        	
+        	totalprice = (price1*qtty1)+(price2*qtty2);
+     
+        	discount =  (0.2)*totalprice;
+        	discount1= totalprice -discount;
+        	discount2=  (0.9)*totalprice;
+        	discount3= totalprice-discount2;
+        	System.out.println();
+
+        	System.out.println("Total price           : RM " + totalprice);
+
+        	if (totalprice>=100) {
+        		
+        		System.out.printf("Discount received  : RM %.2f " , discount);
+        	    System.out.printf("\nPrice to be paid : RM %.2f " , discount1);
+        	}
+        	else {
+        		System.out.printf("Discount received  : RM %.2f " , discount2);
+        	    System.out.printf("\nPrice to be paid : RM %.2f " , discount3);
+        	    
+        	}
+    	}
+        	else if (items==1) {
+        		
+        		System.out.print("Enter price of the first price : RM ");
+            	price1= in.nextDouble();
+            	System.out.print("Enter quantity of first item: ");
+            	qtty1 = in.nextInt();
+            
+            	System.out.println("");
+            	
+            	totalprice = (price1*qtty1);
+         
+            	discount =  (0.2)*totalprice;
+            	discount1= totalprice -discount;
+            	discount2=  (0.9)*totalprice;
+            	discount3= totalprice-discount2;
+            	System.out.println();
+
+            	System.out.println("Total price           : RM " + totalprice);
+
+        	
+            	if (totalprice>=100) {
+            		
+            		System.out.printf("Discount received  : RM %.2f " , discount);
+            	    System.out.printf("\nPrice to be paid : RM %.2f " , discount1);
+            	}
+            	else {
+            		System.out.printf("Discount received  : RM %.2f " , discount2);
+            	    System.out.printf("\nPrice to be paid : RM %.2f " , discount3);
+            	    
+            	}
+        	
+        	}
+		
+    	else {
+    		
+    		System.out.println("The maximum number of items is 3 ");
+    	}
+		
+		
+		
+		
+		
+	}
+
+}
