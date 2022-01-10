@@ -1,0 +1,57 @@
+import java.util.Scanner;
+public class labtest1_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Scanner in = new Scanner(System.in);
+		
+		
+		double sales;
+		int hours;
+		double commission;
+		double wages;
+		
+		
+		
+		System.out.print(" Enter your sales : RM ");
+		sales= in.nextDouble();
+		System.out.print(" Enter hours worked: RM ");
+		hours = in.nextInt();
+		System.out.println("");
+		
+		if (sales>=150.00 && sales<=300.00) {
+			
+			commission = 0.05 * sales;
+			
+			wages = commission +(5* hours);
+			
+		}
+		
+		else if (sales>=301.00 && sales<=500.00) {
+			
+	        commission = 0.10 * sales;
+			
+			wages = commission +(5* hours);
+		}
+       
+		else {
+			
+	        commission = 0.15 * sales;
+			
+			wages = commission +(5* hours);
+		}
+		
+		
+		
+		System.out.println(" Enter sales        : RM " + sales);
+		System.out.println(" Enter hours worked : RM " + hours);
+		
+		System.out.println("");
+		System.out.println(" Commission         : RM " + commission);
+		System.out.println(" Daily wages        : RM " + wages);
+	}
+
+}
+ 
